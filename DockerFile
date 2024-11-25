@@ -1,0 +1,5 @@
+FROM openjdk:21
+WORKDIR /usr/src/remo
+COPY . /usr/src/remo
+RUN javac hello.java
+CMD ["java","hello"]
